@@ -207,7 +207,6 @@ let nba_teams = [
 // functions
 
 var total_word_length = 0;
-
 common_words.forEach(word => {
   total_word_length += word.length;
 });
@@ -215,12 +214,53 @@ common_words.forEach(word => {
 let myMap = new Map();
 common_words.forEach(word => {
   [...word].forEach(letter => {
-    let letter_count = myMap.get(letter);
+    let letter_count = myMap.get(letter) || 0;
     myMap.set(letter, ++letter_count);
   });
 });
 
-console.log;
+var highest_key = "";
+var highest_value = 0;
+for (let [key, value] of myMap) {
+  if (value > highest_value) {
+    highest_value = value;
+    highest_key = key;
+  }
+}
+
 // console logs
 console.log("word count", common_words.length);
 console.log("Average word length", total_word_length / common_words.length);
+console.log(myMap);
+console.log("most common letter: ", highest_key, " at: ", highest_value);
+
+//functions to console.log
+common_words_objects.forEach(word => {
+  if (word.rank === 11 || word["rank"] === 12) {
+    console.log(word.word, word.rank);
+  }
+});
+
+nba_teams.forEach(team => {
+  if (team.current_champs !== undefined) {
+    console.log("Current NBA Champs:", team.name);
+  }
+});
+
+nba_teams.forEach(team => {
+  if (team.current_mascot_of_year !== undefined) {
+    console.log("Current Mascot of the Year:", team.mascot);
+  }
+});
+
+nba_teams.forEach(team => {
+  console.log(team.coach);
+});
+
+//backward array
+let bap = require("./mymodule");
+bap.BackwardArrayPrint(common_words);
+
+common_words_objects.forEach(word => {
+  console.log(Object.values(word));
+});
