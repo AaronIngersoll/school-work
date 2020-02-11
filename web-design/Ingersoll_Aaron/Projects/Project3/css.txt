@@ -1,0 +1,6 @@
+
+page background color: #FDFFFC
+page default text color: #9E2226
+default link text color: #773344
+link visited text color: #161925
+link hover text color: #FFCC33
