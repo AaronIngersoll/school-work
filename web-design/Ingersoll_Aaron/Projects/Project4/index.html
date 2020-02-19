@@ -6,10 +6,14 @@
     <title>HTML Practice 6 - Tables</title>
 
     <style type="text/css">
+    body {
+       background-color: #FDFFFC;
+       color: #161925
+    }
       .table-container {
         text-align: center;
         margin: auto;
-        width: 950px;
+        width: 100%;
       }
       table {
         table-layout: fixed;
@@ -20,17 +24,21 @@
       td {
         border: 2px solid black;
       }
-      .day_column {
-        background-color: limegreen;
+      .headings_column {
+        background-color: #FFCC33;
+        color: #9E2226;
+        font-size: 2em;
+
       }
       .caption {
-        color: #003300;
+        color: #773344;
         text-align: center;
       }
-      .course_column {
+      .tool_column {
         background-color: #cccccc;
         font-weight: bolder;
         width: 25%;
+        font-size: rem;
       }
     </style>
   </head>
@@ -40,42 +48,42 @@
         <h1 class="caption">My Class Schedule</h1>
       </caption>
       <table class="table-container" cellpadding="10">
-        <colgroup class="course_column" span="1"></colgroup>
+        <colgroup class="tool_column" span="1"></colgroup>
         <colgroup class="days" span="5"></colgroup>
 
         <tr>
-          <th class="day_column">Tools</th>
-          <th class="day_column" colspan="5">Details</th>
+          <th class="headings_column">Tools</th>
+          <th class="headings_column" colspan="5">Details</th>
         </tr>
         <tr>
-          <td>Cooking Pots</td>
+          <td class="tool_column">Cooking Pots</td>
           <td colspan="5">
             Most often rounded with open mouths and somewhat sharply rounded
             bottoms.
           </td>
         </tr>
         <tr>
-          <td>Antique Bowls</td>
+          <td class="tool_column">Antique Bowls</td>
           <td colspan="5">
             Wonderfully carved, thin and lightweight despite its large
             dimensions-13” X 18”.
           </td>
         </tr>
         <tr>
-          <td>Gourds</td>
+          <td class="tool_column">Gourds</td>
           <td colspan="5">
             Made functional light-weight bowls, dippers, and spoons.
           </td>
         </tr>
         <tr>
-          <td>Soapstone Bowl</td>
+          <td class="tool_column">Soapstone Bowl</td>
           <td colspan="5">
             Not as finely made, but fairly representative of many found in
             archaeological digs.
           </td>
         </tr>
         <tr>
-          <td>Deer Jaw Bone</td>
+          <td class="tool_column">Deer Jaw Bone</td>
           <td colspan="5">
             Works very well at scraping juicy corn kernels from the cob.
           </td>
