@@ -5,8 +5,55 @@
 <title>Aaron Ingersoll's Home Page</title>
 
 <style>
-    h1 {
+    /* 
+    css:
+    background: fcecc9
+    font: 1F487E
+    link: 376996
+    hover: 829CBC
+    visited: FCB0B3
+    */
+    @font-face {
+        font-family: HeaderFont;
+        src: url(./Projects/Project4/HanSolo/Solov2lsi.ttf);
+    }
+    @font-face {
+        font-family: pageIntroFont;
+        src: url(./Projects/Project4//HanSolo/Solov2cli.ttf);
+    }
+    @font-face {
+        font-family: general;
+        src: url(./Projects/Project4//HanSolo/Solov2ei.ttf);
+    }
+
+    body {
+        background-color: #fcecc9;
+        color: #1F487E;
         text-align: center;
+        
+    }
+    h1 {
+        font-family: pageIntroFont;
+        text-align: center;
+    }
+    h2{
+        font-family: HeaderFont;
+        text-align: center;
+    }
+    a {
+        color:#376996
+    }
+    a:hover {
+        color:#829CBC
+    }
+    a:visited {
+        color:#FCB0B3
+    }
+    .links{
+        display: flex;
+        justify-content: space-evenly;
+        font-family: general;
+        /* font-size: .55em; */
     }
 </style>
 </head>
@@ -14,8 +61,9 @@
 <body>
 <h1>Home Page for Aaron Ingersoll</h1>
 <hr />
-<h2>Projects:</h2>
-<a href="./Projects/Project1/index.htm">Project 1</a>
+<h2>Projects...</h2>
+<div class="links">
+<a href="./Projects/Project1/index.htm">Project 1: Intro</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="./Projects/Project2/AboutUs.html">Project2: AboutUs</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;
@@ -24,8 +72,14 @@
 <a href="./Projects/Project3/AboutUs.html">Project3: AboutUs</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="./Projects/Project3/Tributes.html">Project3: Tributes</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="./Projects/Project4/AboutUs.html">Project4: AboutUs</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="./Projects/Project4/Tributes.html">Project4: Tributes</a>
+</div>
 <hr />
-<h2>Practice Assignments:</h2>
+<h2><i class="fas fa-tasks"></i>Practice Assignments...</h2>
+<div class="links">
 <a href="./Practices/Practice1b/index.html">Practice 1B</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="./Practices/Practice2/cactus.html">Practice 2</a>
@@ -39,9 +93,10 @@
 <a href="./Practices/Practice5/index.html">Practice 5</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="./Practices/Practice6/table.html">Practice 6</a>
+</div>
 <hr />
-<h2>Book Assignments</h2>
-
+<h2>Book Assignments...</h2>
+<div class="links"></div>
 
 
 </body>

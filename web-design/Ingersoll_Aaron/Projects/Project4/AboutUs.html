@@ -8,21 +8,56 @@
 
     <style>
       @font-face {
-          font-family: MyFont;
-          src: url(./1stCav/1stcav2.ttf);
+          font-family: CaptionFont;
+          src: url(./HanSolo/Solov2s.ttf);
         }
+        @font-face {
+          font-family: HeaderFont;
+          src: url(./HanSolo/Solov2lsi.ttf);
+        }
+        @font-face {
+          font-family: pageIntroFont;
+          src: url(./HanSolo/Solov2.ttf);
+        }
+        @font-face {
+          font-family: smallHeader;
+          src: url(./HanSolo/Solov2i.ttf);
+        }
+        @font-face {
+        font-family: general;
+        src: url(./HanSolo/Solov2ei.ttf);
+    }
       body{
         background-color: #FDFFFC;
         color: #9E2226;
-        
+        font-family: general;
       }
       h1, h2 {
+        text-align: center;
+      }
+      h1 {
+        font-family: pageIntroFont;
+        font-size: 2.5em;
+      }
+      h2 {
+        font-family: HeaderFont;
+        font-size: 1.5em;
+        color: #161925;
+      }
+      h3 {
+        font-family: smallHeader;
+        font-size: 1.5em;
+        color: #773344;
+      }
+      p {
+        line-height: 1.5em;
+        font-size: 1.15em;
         text-align: center;
       }
       a:link {
         color: #773344;
         font-weight: bold;
-        font-size: 1.25em;
+        /* font-size: 1.25em; */
       }
       a:hover{
         color: #FFCC33;
@@ -64,12 +99,13 @@
       .headings_column {
         background-color: #FFCC33;
         color: #773344;
+        font-family: HeaderFont;
         font-size: 2em;
       }
       .caption {
         text-align: center;
         color: #773344;
-        font-family: MyFont;
+        font-family:CaptionFont;
       }
       .tool_column {
         background-color: #cccccc;
@@ -77,10 +113,13 @@
         width: 25%;
         font-size: rem;
       }
+      ul {
+        text-align: left;
+      }
     </style>
   </head>
   <body>
-    <h1 id="top">About Utah Native Cooking:</h1>
+    <h1 id="top">About Utah Native Cooking</h1>
     <p>
       <a href="#history">History of Utah Native Cooking</a> |
       <a href="#authenticity">Where we stand out</a> |
@@ -112,7 +151,7 @@
     <hr />
     <h2 id="authenticity">
       Pierre discovered there are some things that set apart Utah cooking from
-      others:
+      others...
     </h2>
     <div id="authenticityContainer">
     <img src="./NativeCooking/AboutUs/Pasta1Sm.jpg" alt="img">
@@ -198,8 +237,8 @@
         </tr>
       </table>
     <hr />
-    <h2 id="press-releases">Press Releases</h2>
-    <h3>Good Eating, October 2011:</h3>
+    <h2 id="press-releases">Press Releases...</h2>
+    <h3>Good Eating, October 2011...</h3>
     <p>
       "Master Chef Pierre DeBois captures the Native Cooking of Utah in his
       online web site: Native Cooking of Utah. Browsing his web site is like
@@ -208,7 +247,7 @@
       these recipes will make you home sick for that down home cooking."
     </p>
 
-    <h3>Utah Travel Council's Top 100 Sites:</h3>
+    <h3>Utah Travel Council's Top 100 Sites...</h3>
     <p>
       "Site Number 66 - Whether you are living in Utah or just visiting, you can
       cook like a true native if you use Native Cooking of Utah as your guide.
