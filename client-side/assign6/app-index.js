@@ -1,6 +1,7 @@
 $(() => {
   console.log("loaded");
-
+  var socket = io();
+  socket.on('message', addMessage)
   getMessages();
 
   $("#send").click(() => {
@@ -12,6 +13,7 @@ $(() => {
 function postMessage(message) {
   $.post("http://localhost:3000/messages", message);
 }
+
 
 function addMessage(message) {
   $("#messages").append(`<h4> ${message.name}</h4><p>${message.message}</p>`);
