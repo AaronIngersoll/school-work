@@ -1,0 +1,61 @@
+﻿body {
+	margin: 0px;
+	background-image: url('Images/background.gif');
+	font-family: arial, Helvetica, sans-serif;
+	height: auto;
+}
+
+header {
+	width: 760px;
+	height: 150px;
+	background-color: #ccc;
+	padding-top: 10px;
+	border: medium dashed #000080;
+	margin: auto;
+	text-align: center;
+}
+section {
+	width: 760px;
+	background-image: url('Images/inner_background.gif');
+	background-repeat: repeat-y;
+	overflow: hidden;
+	border: medium dashed #000080;
+	margin: auto;
+}
+nav {
+	float: left;
+	padding-left: 10px;
+	width: 110px;
+}
+article {
+	float: left;
+	width: 600px;
+	padding: 5px;
+	text-align: center;
+}
+footer {
+	text-align: center;
+	width: 760px;
+	height: 70px;
+	border: medium dashed #000080;
+	background-color: #ccc;
+	margin: auto;
+}
+.logoleft {
+	float: left;
+	padding-top: 30px;
+	padding-left: 15px;
+}
+nav a {
+	border: 2px inset #ccc;
+	background-color: #800;
+	line-height: 250%;
+	color: #fff;
+	font-weight: bold;
+	font-size: 17px;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #ffff00;
+	border: 2px outset #ccc;
+}
