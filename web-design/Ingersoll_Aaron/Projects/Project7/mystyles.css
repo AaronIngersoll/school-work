@@ -1,0 +1,206 @@
+@font-face {
+  font-family: CaptionFont;
+  src: url(HanSolo/Solov2s.ttf);
+}
+@font-face {
+  font-family: HeaderFont;
+  src: url(HanSolo/Solov2lsi.ttf);
+}
+@font-face {
+  font-family: pageIntroFont;
+  src: url(HanSolo/Solov2.ttf);
+}
+@font-face {
+  font-family: smallHeader;
+  src: url(HanSolo/Solov2i.ttf);
+}
+
+body {
+  background-color: #fdfffc;
+  color: #151515;
+}
+
+h1 {
+  font-family: pageIntroFont;
+  font-size: 2.5em;
+  color: #9e2226;
+}
+h2 {
+  font-family: HeaderFont;
+  font-size: 1.5em;
+  color: #161925;
+}
+h3 {
+  font-family: smallHeader;
+  font-size: 1.5em;
+  color: #773344;
+}
+p {
+  line-height: 1.5em;
+  font-size: 1.15em;
+  text-align: center;
+}
+a:link {
+  color: #773344;
+  font-weight: bold;
+  /* font-size: 1.25em; */
+}
+a:hover {
+  color: #ffcc33;
+}
+a:visited {
+  color: #151515;
+}
+header {
+  width: 900px;
+  text-align: center;
+  height: 200px;
+  background-color: #151515;
+  text-align: center;
+  padding-top: 10px;
+  border: groove medium #9e2226;
+  margin: auto;
+}
+section {
+  width: 900px;
+  text-align: center;
+  background-image: url("images/Cooking/CookiesLg.jpg");
+  background-repeat: repeat-y;
+  overflow: hidden;
+  border-right: groove medium #151515;
+  border-left: groove medium #151515;
+  margin: auto;
+}
+
+.logoleft {
+  float: left;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+nav {
+  float: left;
+  width: 250px;
+
+  /* padding-left: 10px; */
+}
+nav a {
+  border: 2px inset #fdfffc;
+  background-color: #9e2226;
+  line-height: 250%;
+  color: #fdfffc;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #ffcc33;
+  border: 2px outset #fdfffc;
+}
+a:visited {
+  color: #151515;
+}
+article {
+  float: left;
+  width: 650px;
+  /* padding: 5px; */
+  text-align: center;
+  /* margin-left: 150px; */
+}
+
+#thumbs,
+#image {
+  /* width: 80vw; */
+  text-align: center;
+  margin: 0 auto 0 auto;
+  color: #151515;
+  /* border: solid 1px #000; */
+  /* background: #773344; */
+  padding: 5px;
+}
+
+#thumbs {
+  margin-top: 10px;
+}
+
+#thumbs img {
+  margin: 2.5px;
+  padding: 10px;
+  height: 150px;
+  width: 120px;
+}
+
+#image {
+  height: 500px;
+}
+
+footer {
+  width: 900px;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  width: 900px;
+  height: 150px;
+  border: groove medium #9e2226;
+  background-color: #151515;
+  margin: auto;
+}
+/* h1,
+h2 {
+  text-align: center;
+}
+
+
+
+
+
+.thumbnailleft {
+  float: left;
+  padding-right: 10px;
+}
+.thumbnailright {
+  float: right;
+  padding-left: 10px;
+}
+#historyContainer {
+  line-height: 1.5em;
+}
+#authenticityContainer {
+  display: flex;
+  justify-content: center;
+  line-height: 1.5em;
+}
+.table-container {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+table {
+  table-layout: fixed;
+  border: 1px solid black;
+  padding: 10px;
+}
+th,
+td {
+  border: 2px solid black;
+}
+.headings_column {
+  background-color: #ffcc33;
+  color: #773344;
+  font-family: HeaderFont;
+  font-size: 2em;
+}
+.caption {
+  text-align: center;
+  color: #773344;
+  font-family: CaptionFont;
+}
+.tool_column {
+  background-color: #cccccc;
+  font-weight: bolder;
+  width: 25%;
+  font-size: rem;
+}
+ul {
+  text-align: left;
+} */

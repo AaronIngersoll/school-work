@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyles.css">
+    <script src="myscripts.js"></script>
+    <title>Document</title>
+</head>
+<body onload="preloadImages()">
+    <header>     
+         <div id="logo" class="logoleft">
+        <a
+          href="logo.html"
+          onMouseOver="document.logo.src='images/banner_logo/logo_white.png'"
+          onMouseOut="document.logo.src='images/banner_logo/logo.png'"
+        >
+          <img
+            src="images/banner_logo/logo.png"
+            width="133"
+            height="126"
+            name="logo"
+            alt="logo"
+            style="border:none;"
+          />
+        </a>
+      </div>
+      <img src="images/banner_logo/Banner.png" alt="banner">
+    </header>
+    <section>
+        <nav>
+            <a href="#">Home</a>
+            <br>
+            <a href="#">About Us</a>
+            <br>
+            <a href="#">Tributes</a>
+            <br>
+            <a href="#">Survey</a>
+            <br>
+            <a href="#">Favorites</a>
+        </nav>
+        <article>
+            <h2>Welcome To:</h2>
+            <h1>Utah Native</h1>
+            <p>If you love to cook like we do, you should enjoy looking around this site.Take a look at our Recipes and take the opportunity to complete our survey.</p>
+
+            <h2>Ideas For Your Family</h2>
+            <div id="thumbs">
+                <img
+                  src="images/Cooking/GrillLg.jpg"
+                  alt="grill"
+                  onmouseover="swapImage(0);"
+                />
+                <img
+                  src="images/Cooking/IceCreamLg.jpg"
+                  alt="Ice Cream"
+                  onmouseover="swapImage(1);"
+                />
+                <img
+                  src="images/Cooking/SaladLg.jpg"
+                  alt="salad"
+                  onmouseover="swapImage(2);"
+                />
+                <img
+                  src="images/Cooking/VeggiesLg.jpg"
+                  alt="Veggies"
+                  onmouseover="swapImage(3);"
+                />
+              </div>
+        
+              <div id="image" style="margin-bottom: 50px;">
+                <img id="theImage" src="images/Cooking/WineGlassLg.jpg" alt="Wine" />
+                <h3 id="bottomText" >Delicious Apple Cider</h3>
+              </div>
+        
+            </div>
+            <h2>Tribute</h2>
+            <img class="thumbnailleft" 
+            src="images/NativeCooking/Tributes/DutchOvenSm.jpg" 
+            alt="" 
+            height="155px"
+            width="175px">
+            <p>
+                Real men are not afraid to try Dutch oven cooking. I made an investment in
+                equipment, but it sat in my garage until I found your wonderful recipes
+                online... <a href="#">more >></a>
+
+
+        </article>
+
+
+    </section>
+    <footer>
+        <p style="color: #fdfffc;">This web site has been created solely for educational purposes.</p>
+        <h1><a href="mailto:aingy205@gmail.com">email me!</a></h1>
+    </footer>
+</html>
