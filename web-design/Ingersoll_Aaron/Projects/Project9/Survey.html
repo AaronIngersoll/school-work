@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="print.css" media=”print”>
+    <script src="myscripts.js"></script>
+    <title>Utah Native: Customer Survey</title>
+</head>
+<body onload="preloadImages()">
+    <header>     
+         <div id="logo" class="logoleft">
+        <a
+          href="logo.html"
+          onMouseOver="document.logo.src='images/banner_logo/logo_white.png'"
+          onMouseOut="document.logo.src='images/banner_logo/logo.png'"
+        >
+          <img
+            src="images/banner_logo/logo.png"
+            width="133"
+            height="126"
+            name="logo"
+            alt="logo"
+            style="border:none;"
+          />
+        </a>
+      </div>
+      <img src="images/banner_logo/Banner.png" alt="banner">
+    </header>
+    <section>
+        <nav>
+            <a href="home.htm">Home</a>
+            <br>
+            <a href="image_map.html">About Us</a>
+            <br>
+            <a href="Tributes.html">Tributes</a>
+            <br>
+            <a href="Survey.html">Survey</a>
+            <br>
+            <a href="Links.html">Favorites</a>
+        </nav>
+        <article>
+            <h1>Send A Utah Native Recipe!</h1>
+            <form action="FormToEmail.php" method="post" name="RecipeSubmission" target="_blank">
+              <fieldset id="CustomerInfo">
+                <legend>Your Information</legend>
+                <ol>
+                    <label id="FNameLBL" for="FNameTXT">First Name</label>
+                    <li>
+                        <input name="FName" type="text" id="FNameTXT" size="30" tabindex="1"> 
+                    </li>
+                    <label id="LNameLBL" for="LNameTXT">Last Name</label>
+                    <li>
+                        <input name="LName" type="text" id="LNameTXT" size="30" tabindex="2"> 
+                    </li>
+                    <label id="EmailLBL" for="EmailTXT">Email</label>
+                    <li>
+                        <input name="Email" type="text" id="EmailTXT" size="30" tabindex="3"> 
+                    </li>
+
+                    <label id="utahCountyLBL" for="CountyDDB">Enter Your County</label>
+                    <li>
+                        <select name="County" id="CountyDDB"  Height='1' tabindex="4"> 
+                          <option>Beaver</option>
+                          <option>Box Elder</option>
+                          <option>Cache</option>
+                          <option>Carbon</option>
+                          <option>Dagget</option>
+                          <option>Davis</option>
+                          <option>Duchesne</option>
+                          <option>Emery</option>
+                          <option>Garfield</option>
+                          <option>Grand</option>
+                          <option>Iron</option>
+                          <option>Juab</option>
+                          <option>Kane</option>
+                          <option>Millard</option>
+                          <option>Morgan</option>
+                          <option>Piute</option>
+                          <option>Ruch</option>
+                          <option selected >Salt Lake</option>
+                          <option>San Juan</option>
+                          <option>Sanpete</option>
+                          <option>Sevier</option>
+                          <option>Summit</option>
+                          <option>Tooele</option>
+                          <option>Uintah</option>
+                          <option >Utah</option>
+                          <option>Wasatch</option>
+                          <option>Washington</option>
+                          <option>Wayne</option>
+                          <option>Weber</option>
+                        
+                        </select>
+                    </li>
+                </ol>
+                </fieldset>
+                <fieldset id="joinEmailList">
+                  <legend>Join Our Email List</legend>
+                  <ol>
+                    <label id="YesLBL" for="YesRB">Yes:</label>
+                    <li>
+                        <input type="radio" id="YesRB" name="List" value="Yes"tabindex="5">
+                    </li>
+                    <label id="NoLBL" for="NoRB">No:</label>
+                    <li>
+                        <input type="radio" id="NoRB" name="List" value="No" tabindex="6">
+                    </li>
+                  </ol>
+                </fieldset>
+                <fieldset id="recipe">
+                    <legend>Recipe</legend>
+                    <ol>
+                        <label id="MorningLBL" for="MorningRB">Breakfast:</label>
+                        <li>
+                            <input type="radio" id="MorningRB" name="Time" value="Morning"tabindex="7">
+                        </li>
+                        <label id="AfternoonLBL" for="AfternoonRB">Lunch:</label>
+                        <li>
+                            <input type="radio" id="AfternoonRB" name="Time" value="Afternoon"tabindex="8">
+                        </li>
+                        <label id="EveningLBL" for="EveningRB">Dinner:</label>
+                        <li>
+                            <input type="radio" id="EveningRB" name="Time" value="Evening"tabindex="9">
+                        </li>
+                        <label id="DesertLBL" for="DesertRB">Desert:</label>
+                        <li>
+                            <input type="radio" id="DesertRB" name="Time" value="Desert"tabindex="10">
+                        </li>
+                    </ol>
+                    <ol>
+                      <label id="RecipeLBL" for="RecipeTXA">Enter the Recipe</label>
+                      <li>
+                          <textareA id="RecipeTXA" name="Comment" rows="8" tabindex="11"></textareA>
+                      </li>
+                  </ol>
+                </fieldset>
+                <input type="submit" class="button">
+                <input type="reset"class="button">
+              </form>
+        </article>
+
+
+    </section>
+    <footer>
+        <p style="color: #fdfffc;">This web site has been created solely for educational purposes.</p>
+        <h1><a href="mailto:aingy205@gmail.com">email me!</a></h1>
+    </footer>
+</html>
