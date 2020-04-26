@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Forms in Expression Web</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<style>
+    form {
+border: solid 5px Navy;
+padding: 5px;
+background-color:#CCCCCC;
+font-family:Tahoma,Geneva,sans-serif;
+}
+fieldset{
+margin: 0;
+border-top: Green 2px solid;
+border-left: none;
+border-right: none;
+border-bottom:none;
+}
+legend{
+font-weight: bold;
+color: Navy;
+}
+form ol{
+list-style: none;
+}
+form li{
+padding-bottom: 10px;
+}
+label{
+float: left;
+width: 150px;
+padding-right: 5px;
+text-align: right;
+}
+input.filled, select, textarea {
+width: 150px;
+background-color:#CCFFFF;
+color: #000000;
+}
+.button{
+border:groove 5px Navy;
+background-color: Blue;
+color: #FFFFFF;
+width: 200px;
+height: 40px;
+margin-right: 20px;
+margin-left: 20px;
+font-variant: small-caps;
+font-weight: bold;
+font-size: 17px;
+letter-spacing: 5px;
+}
+
+</style>
+
+</head>
+<body>
+
+<form action="FormToEmail.php" method="post" name="CustomerService" target="_blank">
+	<fieldset id="CustomerInfo">
+    <legend>Customer Information</legend>
+    <ol>
+        <label id="FNameLBL" for="FNameTXT">First Name</label>
+        <li>
+            <input name="FName" type="text" id="FNameTXT" size="30" tabindex="1"> 
+        </li>
+        <label id="LNameLBL" for="LNameTXT">Last Name</label>
+        <li>
+            <input name="LName" type="text" id="LNameTXT" size="30" tabindex="2"> 
+        </li>
+        <label id="EmailLBL" for="EmailTXT">Email</label>
+        <li>
+            <input name="Email" type="text" id="EmailTXT" size="30" tabindex="3"> 
+        </li>
+        <label id="JobTitleLBL" for="TitleDDB">Job Title</label>
+        <li>
+            <select name="Title" id="TitleDDB" tabindex="4" Height='1'> <option>Worker Bee</option></select>
+        </li>
+    </ol>
+    </fieldset>
+    <fieldset id="ErrorInfo">
+        <legend>Error Information</legend>
+        <ol>
+            <label id="SeverityLBL" for="SeverityDDB">Severity Level (1-5):</label>
+            <li>
+                <select name="Severity" id="SeverityDDB" tabindex="5" Height='1'> 
+                    <option selected >1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                
+                </select>
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset id="TimeDay">
+        <legend> Time of Day</legend>
+        <ol>
+            <label id="MorningLBL" for="MorningRB">Morning:</label>
+            <li>
+                <input type="radio" id="MorningRB" name="Time" value="Morning"tabindex="6">
+            </li>
+            <label id="AfternoonLBL" for="AfternoonRB">Afternoon:</label>
+            <li>
+                <input type="radio" id="AfternoonRB" name="Time" value="Afternoon"tabindex="7">
+            </li>
+            <label id="EveningLBL" for="EveningRB">Evening:</label>
+            <li>
+                <input type="radio" id="EveningRB" name="Time" value="Evening"tabindex="8">
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset id="ErrorType">
+        <legend>Error Type</legend>
+        <ol>
+            <label id="HardwareLBL" for="HardwareCB">Hardware:</label>
+            <li>
+                <input type="radio" id="HardwareCB" name="Hardware" value="Hardware"tabindex="9">
+            </li>
+            <label id="SoftwareLBL" for="SoftwareCB">Software:</label>
+            <li>
+                <input type="radio" id="SoftwareCB" name="Software" value="Software"tabindex="10">
+            </li>
+            <label id="HumanLBL" for="HumanRB">Human:</label>
+            <li>
+                <input type="radio" id="HumanRB" name="Human" value="Human"tabindex="11">
+            </li>
+        </ol>
+        <ol>
+            <label id="ComentLBL" for="CommentTXA">Other Comments::</label>
+
+            <li>
+                <textareA id="CommentTXA" name="Comment" rows="4" tabindex="12"></textareA>
+            </li>
+        </ol>
+    </fieldset>
+    <input type="submit" class="button">
+    <input type="reset"class="button">
+	</form>
+
+
+
+</body>
+</html>

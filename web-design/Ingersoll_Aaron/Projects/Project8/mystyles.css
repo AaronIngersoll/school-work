@@ -128,7 +128,10 @@ article {
   height: 150px;
   width: 120px;
 }
-
+.thumbnailleft {
+  float: left;
+  padding-right: 10px;
+}
 #image {
   height: 500px;
 }
