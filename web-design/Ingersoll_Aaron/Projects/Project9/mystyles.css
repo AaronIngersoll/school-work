@@ -64,8 +64,8 @@ header {
 section {
   width: 900px;
   text-align: center;
-  background-image: url("images/Cooking/CookiesLg.jpg");
-  background-repeat: repeat-y;
+  /* background-image: url("images/Cooking/CookiesLg.jpg");
+  background-repeat: repeat-y; */
   overflow: hidden;
   border-right: groove medium #151515;
   border-left: groove medium #151515;
@@ -235,6 +235,38 @@ textarea {
   font-weight: bold;
   font-size: 17px;
   letter-spacing: 5px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+a:link {
+  color: #773344;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+a:hover {
+  color: #ffcc33;
+}
+a:visited {
+  color: #161925;
+}
+
+.thumbnailleft {
+  float: left;
+  padding-right: 10px;
+}
+.thumbnailright {
+  float: right;
+  padding-left: 10px;
+}
+#historyContainer {
+  line-height: 1.5em;
+}
+#authenticityContainer {
+  display: flex;
+  justify-content: center;
+  line-height: 1.5em;
 }
 /* h1,
 h2 {
